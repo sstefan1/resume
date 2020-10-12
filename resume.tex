@@ -1,0 +1,96 @@
+%%%%%%%%%%%%%%%%% PREAMBLE %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Change the font size of your document - 10pt, 12.1pt, etc.
+\documentclass[letterpaper,11pt,oneside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\usepackage{hyperref}
+
+\usepackage{graphicx}
+\graphicspath{ {images/}} %upload your signature to this file
+%Change the margins to fit your CV/resume content
+\usepackage[left=1in, right=1in, bottom=1.25in, top=1.25in]{geometry}
+
+%Skype information - include your Skype name for a link to add you on Skype
+\newcommand*{\Skype}{\href{skype:john.smith?add}{john.smith}} 
+\newcommand{\Absender}[1][\normalsize]{\Skype} 
+
+%Changes the page numbers - {arabic}=arabic numerals, {gobble}=no page numbers, {roman}=Roman numerals
+\pagenumbering{gobble}
+
+%%%%%%%%%%%%%%%%% END OF PREAMBLE %%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%% NAME OF APPLICANT %%%%%%%%%%%%%%%%%%%
+
+\noindent  \Huge{\textbf{Stefan Stipanović}}  \\
+\vspace{-2ex}
+\hrule
+\normalsize
+
+%%%%%%%%%%%%%%%%% CONTACT INFORMATION %%%%%%%%%%%%%%%%%
+% Your email address, website, and Skype name are links to send email, open your website and add you on Skype. 
+
+\begin{center}
+\begin{tabular}{l l}
+ \href{mailto:stefomeister@gmail.com}{stefomeister@gmail.com}    & \hspace{1in} \href{https://github.com/sstefan1}{github.com/sstefan1} \\
+ \href{https://www.linkedin.com/in/stefan-stipanovic/}{linkedin.com/in/stefan-stipanovic/} & \hspace{1in}  Programming Languages: C++, C, C\#, Python
+\end{tabular}
+\end{center}
+
+\vspace{1em}
+
+%%%%%%%%%%%%%%%%% MAIN BODY %%%%%%%%%%%%%%%%%%%%%%%%%%%
+% The main body is contained in a tabular environment. To move sections onto the next page, simply end the tabular environment and begin a new tabular environment.
+
+\noindent \begin{tabular}{@{} l l}
+ \Large\textbf{Education}     & \textbf{Faculty of Technical Sciences, University of Novi Sad} \\
+     & B.S. (Honours) in Electrical Engineering and Computer Science, 2020. \\ \\
+     & \textbf{Petnica Science Center } \\
+     & Selected as one of 50 participants in advanced mathematics, 2014 - 2015. \\ \\
+ 
+ \Large\textbf{Experience}    & \textbf{Schneider Electric DMS NS, January 2017 - Present} \\
+ & \textbf{Scholarship Student at Energy Market Team, December 2018 - Present} \\
+     & Implemented parts of contingency analysis and remedial actions algorithms. \\
+     & Improved performance and implemented new functionalities in CLI tool. \\
+     & Introduced 8x performance improvement of 24 hour IGM model creation \\
+     & with parallelization. \\
+     & \\
+     & \textbf{Google Summer of Code 2020} \\
+     & \textbf{LLVM - Improve Parallelism-Aware Analyses and Optimizations } \\
+     & \textbf{May 2020 - September 2020} \\
+     & Worked on OpenMPOpt optimization pass, improving performance of parallel \\
+     & programs. Connecting Attributor framework with OpenMPOpt. \\
+     & OpenMP ICV tracking\\
+     &\\
+     &\textbf{Google Summer of Code 2019} \\
+     & \textbf{LLVM - Improve Parallelism-Aware Analyses and Optimizations } \\
+     & \textbf{May 2019 - August 2019} \\
+     & Added some missing attribute deductions. \\
+     & Introduced new attributes. \\
+     & Implemented transformations such as liveness analysis, heap-to-stack conversion. \\
+     & \\
+     & \textbf{Relevant Open Source Work} \\
+     & LLVM contributor, June 2019 - Present \\
+     & \\
+     
+     
+     \Large {}\textbf{{Conferences}} \\
+     & Coauthored and presented \href{https://llvm.org/devmtg/2019-10/talk-abstracts.html#post4}{poster} at LLVM developer meeting, \\
+     & October 2019, San Jose, USA. \\
+     & Coauthored and presented \href{https://whova.com/embedded/speaker/llvm_202010/11649941/}{technical talk} at LLVM virtual developer meeting, \\
+     & October 2020 \\
+     & \\
+     
+
+
+  \Large {}\textbf{{Languages}}   & Serbian (native), English (fluent), \LaTeX, git \\
+\Large {}\textbf{{and Skills}} \\
+& \\
+
+\end{tabular}
+
+
+\end{document}
+
+
